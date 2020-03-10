@@ -34,6 +34,7 @@ function init() {
                     stars, color, ...response.data
                 })
                 console.log(html)
+                fs.writeFile()
                 const conversion = convertFactory({
                     converterPath: convertFactory.converters.PDF
                 })
@@ -51,7 +52,7 @@ function init() {
     })
 }
 
-init()
+init(
 // inquirer.prompt(questions).then(ans =>{
 //     console.log(ans)
 // })
